@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - DOCKER_IMAGE_NAME=iris-ml-api-travisci
+    - DOCKER_IMAGE_NAME=$DOCKERHUB_USERNAME/iris-ml-api-travisci
 
 before_install:
   # Update Docker to latest version
