@@ -39,7 +39,8 @@ script:
 
 after_success:
   # Optional: Push to Docker Hub (uncomment and add Docker Hub credentials in Travis CI settings)
-  # - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  # Add DOCKERHUB_USERNAME and DOCKERHUB_TOKEN (Personal Access Token) as environment variables in Travis CI
+  # - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
   # - docker push $DOCKER_IMAGE_NAME:$TRAVIS_BUILD_NUMBER
   # - docker push $DOCKER_IMAGE_NAME:latest
   - echo "Build successful!"
