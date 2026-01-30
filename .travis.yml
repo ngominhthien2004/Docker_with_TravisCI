@@ -43,7 +43,7 @@ after_success:
    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
    - docker push $DOCKER_IMAGE_NAME:$TRAVIS_BUILD_NUMBER
    - docker push $DOCKER_IMAGE_NAME:latest
-  - echo "Build successful!"
+   - echo "Build successful!"
 
 after_failure:
   - echo "Build failed!"
